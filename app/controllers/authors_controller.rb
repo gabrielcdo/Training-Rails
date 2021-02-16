@@ -4,6 +4,8 @@ class AuthorsController < ApplicationController
   # GET /authors or /authors.json
   def index
     @authors = Author.all
+    @q = Author.ransack(params[:q])
+    @authors = @q.result
   end
 
   # GET /authors/1 or /authors/1.json

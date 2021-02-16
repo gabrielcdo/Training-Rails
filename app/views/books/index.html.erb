@@ -17,8 +17,8 @@
     <% @books.each do |book| %>
       <tr>
         <td><%= book.nome %></td>
-        <td><%= book.author %></td>
-        <td><%= book.category %></td>
+        <td><%= book.author.nome %></td>
+        <td><%= book.category.nome %></td>
         <td><%= book.stock %></td>
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>

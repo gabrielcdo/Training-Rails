@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-
+#rubizin
 ruby '2.5.1'
+#ransack
+gem 'ransack'
 #adminlite2 
 gem 'adminlte2-rails'
 #gem devise user

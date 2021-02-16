@@ -15,8 +15,8 @@
   <tbody>
     <% @reservations.each do |reservation| %>
       <tr>
-        <td><%= reservation.book %></td>
-        <td><%= reservation.client %></td>
+        <td><%= reservation.book.nome %></td>
+        <td><%= reservation.client.nome %></td>
         <td><%= reservation.user %></td>
         <td><%= link_to 'Show', reservation %></td>
         <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
