@@ -34,7 +34,7 @@ class ReservationsController < ApplicationController
         format.html { redirect_to @reservation, notice: "Reservation was successfully created." }
         format.json { render :show, status: :created, location: @reservation }
       else
-        format.html { render :new, status: :unprocessable_entity }
+        format.html { redirect_to @reservation , alert: "Sem estoque do livro."}
         format.json { render json: @reservation.errors, status: :unprocessable_entity }
       end
     end
